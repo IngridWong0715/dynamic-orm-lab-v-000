@@ -52,10 +52,8 @@ class InteractiveRecord
   end
 
   def self.find_by(attribute)
-    #{:name=>"Susan"}
-    # SELECT * FROM #{table_name} WHERE name = 'Susan'
-    values = [] #["'Susan'"]
-    keys = [] #["name"]
+    values = [] 
+    keys = [] 
     attribute.each do |key, value|
       keys << key.to_s
       values << "'#{value.to_s}'"
