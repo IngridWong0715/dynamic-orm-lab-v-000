@@ -60,8 +60,6 @@ class InteractiveRecord
     end
     sql = "SELECT * FROM #{table_name} WHERE #{keys[0]} = #{values[0]}"
     DB[:conn].execute(sql)
-
-
   end
 
 
